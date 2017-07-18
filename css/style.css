@@ -133,4 +133,92 @@ li {
           .footer .container-fluid .container .row ul li i {
             color: #e9e9e9; }
 
+.my-container {
+  margin-top: 20px; }
+
+.record-list {
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); }
+
+.my-sidebar {
+  font-size: 1em;
+  font-weight: 600;
+  background-color: #fff;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: #DC3838; }
+  .my-sidebar h3 {
+    margin: 0;
+    padding: 15px;
+    font-weight: 700;
+    font-size: 2em;
+    color: #313131; }
+  .my-sidebar ul li a {
+    color: #DC3838;
+    border-bottom: 1px solid silver;
+    border-radius: 0; }
+  .my-sidebar ul li a:hover, .my-sidebar ul li a:focus {
+    color: #FB5B39; }
+
+.record-title {
+  color: #DC3838;
+  font-family: FrescaRegular;
+  font-weight: 600;
+  text-align: center; }
+  .record-title h4 {
+    font-size: 1.8em;
+    padding: 0;
+    margin: 10px 0 10px 0; }
+
+.record-title:hover {
+  font-weight: 700;
+  text-decoration: none;
+  color: #FB5B39; }
+
+.record-desc {
+  color: #000;
+  font-size: 1em; }
+  .record-desc a {
+    color: #DC3838;
+    text-decoration: none; }
+  .record-desc a:hover {
+    color: #FB5B39;
+    border-bottom: 1px dashed #FB5B39; }
+
+.record-additional-info {
+  opacity: 0.8;
+  font-size: 0.9em;
+  margin-top: 10px;
+  font-weight: bold; }
+  .record-additional-info a {
+    text-decoration: none;
+    color: #313131; }
+  .record-additional-info .date {
+    color: #313131; }
+  .record-additional-info a:hover, .record-additional-info .date:hover {
+    color: #000;
+    cursor: pointer; }
+
+.my-active {
+  background-color: #dbdbdb; }
+
+.blog-record {
+  margin-top: 25px, 0px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  border-bottom: 1px solid #e9e9e9; }
+  .blog-record .thumbnail {
+    width: 200px;
+    height: 150px;
+    border: none;
+    margin-left: 10px;
+    padding: 10px;
+    overflow: hidden; }
+    .blog-record .thumbnail img {
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      transition: all .3s ease; }
+    .blog-record .thumbnail img:hover {
+      opacity: 0.8; }
+
 /*# sourceMappingURL=style.css.map */

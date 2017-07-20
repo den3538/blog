@@ -221,4 +221,24 @@ li {
     .blog-record .thumbnail img:hover {
       opacity: 0.8; }
 
+.modal {
+  font-family: FrescaRegular;
+  font-size: 1.3em;
+  position: absolute;
+  top: 15%; }
+  .modal .modal-title {
+    font-size: 1.4em;
+    font-weight: 600; }
+  .modal .modal-body {
+    margin-right: 20px;
+    margin-left: 20px; }
+    .modal .modal-body .checkbox {
+      font-family: FrescaRegular;
+      margin-top: 10px;
+      margin-left: 30px; }
+    .modal .modal-body #pass {
+      margin-top: 20px; }
+    .modal .modal-body #remember {
+      font-size: 12pt; }
+
 /*# sourceMappingURL=style.css.map */

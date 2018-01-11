@@ -7,11 +7,101 @@
 }
 *::selection{ color:#fff;   background:#000}
 
-body{ background-color:#e9e9e9;  overflow-x:hidden}
+body{ background-color:#e9e9e9;  overflow-x:hidden; margin: 0; padding: 0}
 
 body::selection{ background-color:#FB5B39}
 
 body::-moz-selection{ background-color:#FB5B39}
+
+@font-face {
+    font-family: Roboto; /* Èìÿ øðèôòà */
+    src: url(../fonts/Roboto-MediumItalic.ttf); /* Ïóòü ê ôàéëó ñî øðèôòîì */
+   }
+
+@keyframes circle {
+        from {
+                transform: rotate(0deg);
+        }
+        to {
+                transform: rotate(360deg);
+        }
+}
+body{
+	margin: 0;
+	padding: 0;
+}
+.wrapper{
+	position: fixed;
+	margin: 0;
+	padding: 0;
+	width: 100vw;
+	height: 100vh;
+	background: #000;
+	overflow: hidden;
+	z-index: 100500;
+}
+	.block{
+		width: 50px;
+		height: 50px;
+		position: absolute;
+		background: transparent;
+		left: 50%;
+		top:50%;
+		transform: translate(-50%,-50%);
+		border-radius: 5px;
+		color: #fff;
+		text-align: center;
+		font-family: 'Roboto', sans-serif;
+	}
+
+
+	.block h1{
+		position: absolute;
+		text-align: center;
+		top: -15%;
+		left: -29%;
+		font-size: 24px;
+		transform: scale(2);
+		opacity: 0;
+		transition: .8s;
+		text-transform: uppercase;
+	}
+		.block:hover h1{
+		transform: scale(1);
+		opacity: 1;
+	}
+
+	.block::before,.block::after{
+		position: absolute;
+	}
+
+	.tool{
+		position: absolute;
+		width: 95px;
+		height: 95px;
+		background: transparent;
+		border-right: 2px solid orange;
+		z-index: 100;
+		content: "";
+		left: -47%;
+		top: -45%;
+		border-radius: 50%;
+		animation: circle 1.5s infinite linear;
+		}
+
+			.tool::after{
+		position: absolute;
+		width: 110px;
+		height: 110px;
+		background: transparent;
+		border-bottom: 3px solid red;
+		z-index: 100;
+		content: "";
+		border-radius: 50%;
+		left: -9%;
+		top: -9%
+		}
+
 
 a{ color:#e9e9e9;  text-decoration:none}
 

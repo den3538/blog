@@ -10,6 +10,15 @@
 	<link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
 </head>
 <body>
+    <div class="wrapper">
+        <div class="block">
+            <h1>hello!</h1>
+            <span class="tool">
+                
+            </span>
+
+        </div>
+    </div>
 		<nav class="navbar navbar-inverse navbar-static-top container-fluid" role="navigation">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
@@ -293,5 +302,10 @@
 </div>
     <script src = "js/jquery-3.2.1.min.js"></script>
     <script type="text/javascript" src = "js/bootstrap.min.js"></script>
+    <script type="text/javascript">
+       $(window).on('load',function(){
+            $(".wrapper").fadeOut('slow');
+       });
+    </script>
 </body>
 </html>
